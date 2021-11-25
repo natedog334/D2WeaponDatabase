@@ -14,12 +14,26 @@ class SortBy(Enum):
 class DatabaseService(object):
 
     def sample_query(self, name):
-        recipt = ("""
+        receipt = ("""
             SELECT name FROM  MPH_TEST 
             WHERE name ='{name}'
         """.format(name=name))
-        print(recipt)
-        return exec_fetchall(recipt)
+        print(receipt)
+        return exec_fetchall(receipt)
+
+    def get_weapon_by_name(self, name):
+        receipt = (f"""
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
+                    from guns
+                    inner join archetype a on a.archetype_id = guns.archetype_id
+                    inner join element e on e.element_id = guns.element_id
+                    inner join rarity r on r.rarity_id = guns.rarity_id
+                    inner join rof on rof.rof_id = guns.rof_id
+                    inner join source s on s.source_id = guns.source_id
+                    inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
+                    where guns.gun_name = '{name}'
+                """)
+        return exec_fetchall(receipt)
 
 def exec_fetchone(query: str):
     try:

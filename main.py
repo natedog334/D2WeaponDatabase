@@ -11,7 +11,7 @@ def search_weapon_menu():
         "Search weapons by:",
         [
             Option("Name", search_weapon_by_name),
-            Option("Generate a loadout", lambda: push(generate_loadout_menu(), True)),
+            
         ]
     )
 
@@ -28,9 +28,22 @@ def main_menu():
         "Welcome to the Destiny 2 Weapon Database!",
         [
             Option("Search for a weapon", lambda: push(search_weapon_menu(), True)),
-            Option("Generate a loadout", lambda: push(search_weapon_menu(), True)),
+            Option("Generate a loadout", lambda: push(generate_loadout_menu(), True)),
         ]
     )
+
+def search_weapon_by_name():
+    title = input("Enter a weapon name\n> ")
+    return_value = dbs.get_weapon_by_name(title)
+    if return_value:
+        clear()
+        for weapon_info in return_value:
+            print(f"Weapon: {weapon_info[0]} | Type: {weapon_info[1]} | Archetype: {weapon_info[2]} "
+                  f"| RoF: {weapon_info[3]} | Element: {weapon_info[4]} | Rarity: {weapon_info[5]} "
+                  f"| Source: {weapon_info[6]}")
+    else:
+        clear()
+        print("An error occurred while searching for songs.")
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')

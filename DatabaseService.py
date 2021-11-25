@@ -31,7 +31,21 @@ class DatabaseService(object):
                     inner join rof on rof.rof_id = guns.rof_id
                     inner join source s on s.source_id = guns.source_id
                     inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
-                    where guns.gun_name = '{name}'
+                    where lower(guns.gun_name) like lower('{name}%')
+                """)
+        return exec_fetchall(receipt)
+
+    def get_weapon_by_type(self, type):
+        receipt = (f"""
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    from guns
+                    inner join archetype a on a.archetype_id = guns.archetype_id
+                    inner join element e on e.element_id = guns.element_id
+                    inner join rarity r on r.rarity_id = guns.rarity_id
+                    inner join rof on rof.rof_id = guns.rof_id
+                    inner join source s on s.source_id = guns.source_id
+                    inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
+                    where wt.weapon_type_name = '{type}'
                 """)
         return exec_fetchall(receipt)
 

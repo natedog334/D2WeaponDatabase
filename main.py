@@ -1,4 +1,5 @@
 import os
+import random
 import re
 from MenuModule import Menu, Option
 from DatabaseService import DatabaseService
@@ -56,10 +57,11 @@ def search_weapon_element_menu():
 
 def generate_loadout_menu():
     return Menu(
+        "Loadout Generator",
         [
-            Option("Generate a random loadout", lambda: push(search_weapon_menu(), True)),
-            Option("Generate a custom loadout", lambda: push(search_weapon_menu(), True)),
-            Option("Go back", lambda: pop_and_clear()),
+            Option("Generate a random loadout", make_random_loadout),
+            Option("Generate a custom loadout", make_random_loadout),
+            Option("Go back", lambda: pop_and_clear())
         ]
     )
 
@@ -78,9 +80,7 @@ def search_weapon_by_name():
     if return_value:
         clear()
         for weapon_info in return_value:
-            print(f"Weapon: {weapon_info[0]} | Type: {weapon_info[1]} | Archetype: {weapon_info[2]} "
-                  f"| RoF: {weapon_info[3]} | Element: {weapon_info[4]} | Rarity: {weapon_info[5]} "
-                  f"| Source: {weapon_info[6]}")
+            print_weapon(weapon_info)
     else:
         clear()
         print("An error occurred/no weapons found.")
@@ -90,9 +90,7 @@ def search_weapon_by_type(type):
     if return_value:
         clear()
         for weapon_info in return_value:
-            print(f"Weapon: {weapon_info[0]} | Type: {weapon_info[1]} | Archetype: {weapon_info[2]} "
-                  f"| RoF: {weapon_info[3]} | Element: {weapon_info[4]} | Rarity: {weapon_info[5]} "
-                  f"| Source: {weapon_info[6]}")
+            print_weapon(weapon_info)
     else:
         clear()
         print("An error occurred/no weapons found.")
@@ -102,12 +100,59 @@ def search_weapon_by_element(element):
     if return_value:
         clear()
         for weapon_info in return_value:
-            print(f"Weapon: {weapon_info[0]} | Type: {weapon_info[1]} | Archetype: {weapon_info[2]} "
-                  f"| RoF: {weapon_info[3]} | Element: {weapon_info[4]} | Rarity: {weapon_info[5]} "
-                  f"| Source: {weapon_info[6]}")
+            print_weapon(weapon_info)
     else:
         clear()
         print("An error occurred/no weapons found.")
+
+def make_random_loadout():
+    primaries = dbs.get_all_primaries()
+    maxIdx = len(primaries)
+    idx = random.randint(0, maxIdx)
+    primary = primaries[idx]
+    exotic_flag = check_exotic_status(primary)
+
+    secondaries = dbs.get_all_secondaries()
+    maxIdx = len(secondaries)
+    idx = random.randint(0, maxIdx)
+    secondary = secondaries[idx]
+    if exotic_flag:
+        while check_exotic_status(secondary):
+            idx = random.randint(0, maxIdx)
+            secondary = secondaries[idx]
+    else:
+        exotic_flag = check_exotic_status(secondary)
+
+    heavies = dbs.get_all_heavies()
+    maxIdx = len(heavies)
+    idx = random.randint(0, maxIdx)
+    heavy = heavies[idx]
+    if exotic_flag:
+        while check_exotic_status(heavy):
+            idx = random.randint(0, maxIdx)
+            heavy = heavies[idx]
+
+    clear()
+    print_loadout(primary, secondary, heavy)
+
+def check_exotic_status(weapon_info):
+    if weapon_info[5] is "Exotic":
+        return True
+    else:
+        return False
+
+def print_loadout(p, s, h):
+    print("Primary:")
+    print_weapon(p)
+    print("Secondary:")
+    print_weapon(s)
+    print("Heavy:")
+    print_weapon(h)
+
+def print_weapon(weapon_info):
+    print(f"Weapon: {weapon_info[0]} | Type: {weapon_info[1]} | Archetype: {weapon_info[2]} "
+          f"| RoF: {weapon_info[3]} | Element: {weapon_info[4]} | Rarity: {weapon_info[5]} "
+          f"| Source: {weapon_info[6]}")
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')

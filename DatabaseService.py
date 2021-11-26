@@ -64,6 +64,51 @@ class DatabaseService(object):
                 """)
         return exec_fetchall(receipt)
 
+    def get_all_primaries(self):
+        receipt = (f"""
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    from guns
+                    inner join archetype a on a.archetype_id = guns.archetype_id
+                    inner join element e on e.element_id = guns.element_id
+                    inner join rarity r on r.rarity_id = guns.rarity_id
+                    inner join rof on rof.rof_id = guns.rof_id
+                    inner join source s on s.source_id = guns.source_id
+                    inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
+                    where e.gun_element in ('Kinetic', 'Stasis')
+                    and wt.weapon_type_name not in ('grenade_launcher')
+                        """)
+        return exec_fetchall(receipt)
+
+    def get_all_secondaries(self):
+        receipt = (f"""
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    from guns
+                    inner join archetype a on a.archetype_id = guns.archetype_id
+                    inner join element e on e.element_id = guns.element_id
+                    inner join rarity r on r.rarity_id = guns.rarity_id
+                    inner join rof on rof.rof_id = guns.rof_id
+                    inner join source s on s.source_id = guns.source_id
+                    inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
+                    where e.gun_element in ('Void', 'Solar', 'Arc')
+                    and wt.weapon_type_name not in ('rocket_launcher', 'grenade_launcher', 'lfr', 'machine_gun', 'sword')
+                        """)
+        return exec_fetchall(receipt)
+
+    def get_all_heavies(self):
+        receipt = (f"""
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    from guns
+                    inner join archetype a on a.archetype_id = guns.archetype_id
+                    inner join element e on e.element_id = guns.element_id
+                    inner join rarity r on r.rarity_id = guns.rarity_id
+                    inner join rof on rof.rof_id = guns.rof_id
+                    inner join source s on s.source_id = guns.source_id
+                    inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
+                    where e.gun_element in ('Void', 'Solar', 'Arc')
+                    and wt.weapon_type_name in ('rocket_launcher', 'grenade_launcher', 'lfr', 'machine_gun', 'sword')
+                        """)
+        return exec_fetchall(receipt)
+
 def exec_fetchone(query: str):
     try:
         params = {

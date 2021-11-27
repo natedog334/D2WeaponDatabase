@@ -6,6 +6,24 @@ from DatabaseService import DatabaseService
 
 menu_stack = []
 dbs = DatabaseService()
+weapon_types = {
+    "rocket_launcher" : "Rocket Launcher",
+    "grenade_launcher" : "Grenade Launcher",
+    "hand_cannon" : "Hand Cannon",
+    "sniper" : "Sniper",
+    "shotgun" : "Shotgun",
+    "smg" : "SMG",
+    "scout_rifle" : "Scout Rifle",
+    "sidearm" : "Sidearm",
+    "auto_rifle" : "Auto Rifle",
+    "bow" : "Bow",
+    "pulse_rifle" : "Pulse Rifle",
+    "lfr" : "Linear Fusion Rifle",
+    "fusion_rifle" : "Fusion Rifle",
+    "trace_rifle" : "Trace Rifle",
+    "machine_gun" : "Machine Gun",
+    "sword" : "Sword"
+}
 
 def search_weapon_menu():
     return Menu(
@@ -150,7 +168,7 @@ def print_loadout(p, s, h):
     print_weapon(h)
 
 def print_weapon(weapon_info):
-    print(f"Weapon: {weapon_info[0]} | Type: {weapon_info[1]} | Archetype: {weapon_info[2]} "
+    print(f"Weapon: {weapon_info[0]} | Type: {weapon_types.get(weapon_info[1])} | Archetype: {weapon_info[2]} "
           f"| RoF: {weapon_info[3]} | Element: {weapon_info[4]} | Rarity: {weapon_info[5]} "
           f"| Source: {weapon_info[6]}")
 

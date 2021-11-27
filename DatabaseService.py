@@ -37,7 +37,7 @@ class DatabaseService(object):
 
     def get_weapon_by_type(self, type):
         receipt = (f"""
-                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
                     from guns
                     inner join archetype a on a.archetype_id = guns.archetype_id
                     inner join element e on e.element_id = guns.element_id
@@ -51,7 +51,7 @@ class DatabaseService(object):
 
     def get_weapon_by_element(self, element):
         receipt = (f"""
-                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
                     from guns
                     inner join archetype a on a.archetype_id = guns.archetype_id
                     inner join element e on e.element_id = guns.element_id
@@ -66,7 +66,7 @@ class DatabaseService(object):
 
     def get_all_primaries(self):
         receipt = (f"""
-                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
                     from guns
                     inner join archetype a on a.archetype_id = guns.archetype_id
                     inner join element e on e.element_id = guns.element_id
@@ -81,7 +81,7 @@ class DatabaseService(object):
 
     def get_all_secondaries(self):
         receipt = (f"""
-                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
                     from guns
                     inner join archetype a on a.archetype_id = guns.archetype_id
                     inner join element e on e.element_id = guns.element_id
@@ -96,7 +96,7 @@ class DatabaseService(object):
 
     def get_all_heavies(self):
         receipt = (f"""
-                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, e.gun_element, r.gun_rarity, rof.gun_rof, s.gun_source
+                    select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
                     from guns
                     inner join archetype a on a.archetype_id = guns.archetype_id
                     inner join element e on e.element_id = guns.element_id

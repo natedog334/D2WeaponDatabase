@@ -1,0 +1,410 @@
+gun_id,gun_name,archetype_id,source_id,element_id,rof_id,rarity_id,weapon_type_id
+1,Pribina-D,17,52,5,22,2,3
+2,True Prophecy,17,18,5,22,2,3
+3,Igneous Hammer,17,40,3,22,2,3
+4,Bottom Dollar,17,21,6,22,2,3
+5,The Steady Hand,17,25,5,22,2,3
+6,Crimil's Dagger ,17,69,5,22,2,3
+7,Duke Mk. 44 ,17,18,5,22,2,3
+8,Loud Lullaby,17,45,5,22,2,3
+9,Heritage,28,42,5,47,2,5
+10,Bad Omens,17,21,6,36,2,1
+11,Hezen Vengeance,17,17,3,36,2,1
+12,Heretic,17,53,7,36,2,1
+13,Zenobia-D,12,52,7,24,2,1
+14,Subzero Salvo,34,3,7,24,2,1
+15,Royal Entry,34,64,6,24,2,1
+16,Pyroclastic Flow,34,34,3,24,2,1
+17,Tomorrow's Answer,16,40,6,24,2,1
+18,Sleepless,16,46,7,24,2,1
+19,Code Duello,16,55,3,24,2,1
+20,Roar of the Bear,16,69,3,24,2,1
+21,Izanagi's Burden,17,16,5,19,1,4
+22,Cloudstrike,5,36,7,26,1,4
+23,Widow's Bite,5,27,3,26,2,4
+24,D.A.R.C.I,19,18,7,26,1,4
+25,Whisper of the Worm,19,16,3,29,1,4
+26,Borealis,17,18,1,29,1,4
+27,Ancient Gospel ,14,73,3,28,2,3
+28,Ten Paces ,14,18,5,28,2,3
+29,Kindled Orchid ,14,7,6,28,2,3
+30,Austringer,14,51,5,28,2,3
+31,Better Devils ,14,68,5,28,2,3
+32,Lumina,14,16,5,28,1,3
+33,Warden's Law,30,61,5,22,2,3
+34,Nation of Beasts ,14,73,7,28,2,3
+35,Fatebringer,14,73,5,28,2,3
+36,Finite Impactor ,14,69,7,28,2,3
+37,Palindrome ,14,64,6,28,2,3
+38,Sturm,17,16,5,22,1,3
+39,Jack Queen King 3 ,14,49,7,28,2,3
+40,The Old Fashioned,14,18,5,28,2,3
+41,Rose ,14,16,5,28,2,3
+42,Spare Rations,14,66,5,28,2,3
+43,Waking Vigil ,14,46,7,28,2,3
+44,Crimson,22,18,5,21,1,3
+45,Leviathan's Breath,19,16,6,20,1,10
+46,Age-Old Bond ,4,31,6,9,2,9
+47,False Promises ,4,13,5,9,2,9
+48,BrayTech Werewolf ,34,58,5,23,2,9
+49,Tigerspite ,34,46,5,23,2,9
+50,The Number ,34,18,7,23,2,9
+51,Halfdan-D ,4,52,5,9,2,9
+52,Shadow Price ,34,64,7,23,2,9
+53,Hazard of the Cast ,34,21,5,23,2,9
+54,Breakneck ,34,76,5,23,2,9
+55,Horror Story ,34,58,5,23,2,9
+56,Uriel's Gift ,34,18,7,23,2,9
+57,Sweet Business,7,18,5,27,1,9
+58,SUROS Regime,8,18,5,7,1,9
+59,Hard Light,14,18,1,7,1,9
+60,Cerebus+1,1,18,5,9,1,9
+61,Monte Carlo,14,18,5,7,1,9
+62,Sevanth Seraph Carbine ,34,60,5,23,2,9
+63,The Summoner ,14,40,3,7,2,9
+64,Arc Logic ,14,72,7,7,2,9
+65,Gnawing Hunger ,14,66,6,7,2,9
+66,Ether Doctor ,14,20,5,7,2,9
+67,The Forward Path ,14,69,5,7,2,9
+68,Steelfeather Repeater ,32,57,5,46,2,9
+69,Chroma Rush ,32,54,5,46,2,9
+70,Artic Haze ,32,3,3,46,2,9
+71,Reckless Oracle ,32,43,6,46,2,9
+72,Misfit ,32,18,7,46,2,9
+73,Valakadyn ,32,52,3,46,2,9
+74,Vex Mythoclast ,4,73,3,9,1,9
+75,Tommy's Matchbook,32,18,3,46,1,9
+76,Gahlran's Right Hand ,4,48,5,9,2,9
+77,Pluperfect ,4,34,5,9,2,9
+78,Subtle Calamity,34,18,6,8,2,10
+79,Le Monarque,8,74,6,8,1,10
+80,Ticuu's Divination,8,5,3,7,1,10
+81,Wish Ender,8,16,5,41,1,10
+82,Arsenic Bite-4b,10,18,7,7,2,10
+83,Tyranny of Heaven,10,31,3,7,2,10
+84,The Spiteful Fang,10,7,5,7,2,10
+85,Imperial Needle,10,55,6,7,2,10
+86,The Vow,10,2,3,7,2,10
+87,Whispering Slab,10,13,5,7,2,10
+88,Point of the Stag,34,69,7,8,2,10
+89,Accrued Redemption,34,43,5,8,2,10
+90,Biting Winds,34,3,5,8,2,10
+91,Hush,34,50,3,8,2,10
+92,No Turning Back,34,18,5,8,2,10
+93,Trinity Ghoul,8,18,7,31,1,10
+94,Jotunn,8,7,3,34,1,13
+95,Merciless,8,18,3,27,1,13
+96,Telesto,8,18,6,31,1,13
+97,Bastion,18,16,5,31,1,13
+98,Proelium FR3,5,52,3,42,2,13
+99,Cartesian Coordinate,5,18,3,42,2,13
+100,Null Composure,5,24,6,42,2,13
+101,Zealot's Reward,5,43,6,42,2,13
+102,Techeun Force,14,31,7,8,2,13
+103,Timeline's Vertex,14,18,3,8,2,13
+104,Trinary System,14,21,3,8,2,13
+105,Dream Breaker,14,72,3,8,2,13
+106,Coriolis Force,17,3,6,8,2,13
+107,Main Ingredient,34,19,7,5,2,13
+108,Tempered Dynamo,34,62,7,5,2,13
+109,PLUG ONE.1,34,67,7,5,2,13
+110,The Epicurean,34,51,6,5,2,13
+111,The Wizened Rebuke,16,69,7,17,2,13
+112,Hollow Worlds,34,13,7,5,2,13
+113,Exile's Curse,16,40,7,17,2,13
+114,Elatha FR4,16,18,3,17,2,13
+115,Gallant Charge,16,57,3,17,2,13
+116,Glacioclasm,16,70,6,17,2,13
+117,Loaded Question,16,1,7,17,2,13
+118,Erentil FR4,16,52,6,17,2,13
+119,One Thousand Voices,8,31,3,10,1,13
+120,Empty Vessel,23,64,3,19,2,2
+121,Fighting Lion,18,18,6,19,1,2
+122,The Colony,19,18,6,28,1,2
+123,Salvation's Grip,19,16,2,22,1,2
+124,The Prospector,19,18,3,3,1,2
+125,Orewing's Maul,23,69,6,19,2,2
+126,Truthteller,23,27,6,19,2,2
+127,The Militia's Birthright,18,61,5,19,2,2
+128,Salvager's Salvo,23,44,7,19,2,2
+129,Deafening Whisper,23,16,6,19,2,2
+130,Ignition Code,18,54,5,19,2,2
+131,The Mountaintop,18,29,5,19,2,2
+132,Martyr's Retribution,23,57,3,19,2,2
+133,Love and Death,19,72,3,25,2,2
+134,Terran Wind,19,18,3,25,2,2
+135,Swarm of the Raven,19,69,6,25,2,2
+136,Outrageous Fortune,19,19,3,25,2,2
+137,Berenger's Memory,19,27,6,25,2,2
+138,Through Fire and Flood,19,18,7,22,2,2
+139,Edge Transit,19,18,6,22,2,2
+140,Crowd Pleaser,19,21,6,22,2,2
+141,Doomsday,19,66,7,22,2,2
+142,Memory Interdict,19,18,6,22,2,2
+143,Blast Battue,19,5,7,22,2,2
+144,Wendigo GL3,19,10,7,22,2,2
+145,Interference VI,19,18,7,22,2,2
+146,The Last Word,9,16,5,11,1,3
+147,Ace of Spades,14,16,5,28,1,3
+148,Malfeasance,34,16,5,37,1,3
+149,Thorn,14,16,5,28,1,3
+150,Hawkmoon,14,16,5,28,1,3
+151,Sunshot,10,18,3,25,1,3
+152,Erianas Vow,33,34,3,19,1,3
+153,Nature of the Beast ,34,18,7,37,2,3
+154,IKELOS_HC_V1.0.1 ,34,77,6,37,2,3
+155,Trust,34,21,3,37,2,3
+156,Seventh Seraph Office Revolver ,34,65,5,37,2,3
+157,Posterity,34,73,7,37,2,3
+158,Survivor's Epitaph ,34,68,5,37,2,3
+159,Optative ,34,9,6,37,2,3
+160,Luna's Howl ,34,16,3,28,2,3
+161,Not Forgotten,34,16,3,28,2,3
+162,Dire Promise,14,18,5,28,2,3
+163,Thin Line ,17,20,6,22,2,3
+164,Man o' War,34,18,3,42,2,12
+165,Line in the Sand,34,57,7,42,2,12
+166,Threaded Needle,34,55,6,42,2,12
+167,Corsair's Wrath,34,16,3,42,2,12
+168,Komodo-4FR,34,29,3,42,2,12
+169,Crooked Fang-4FR,34,52,6,42,2,12
+170,Dead-Ender,34,47,7,42,2,12
+171,Tarantula,34,18,7,42,2,12
+172,The Queenbreaker,8,18,7,43,1,12
+173,Sleeper Simulant,8,16,3,35,1,12
+174,Vex Mythoclast,13,17,3,42,1,12
+175,Arbalest,3,18,5,42,1,12
+176,Thermal Erosion,5,3,3,27,2,15
+177,Xenophage,8,16,3,22,1,15
+178,Thunderlord,8,16,7,23,1,15
+179,21% Delirium,5,39,7,27,2,15
+180,Temporal Clause,5,15,6,27,2,15
+181,Shattered Cipher,5,37,6,27,2,15
+182,Edgewise,5,8,3,27,2,15
+183,Avalanche,14,70,3,23,2,15
+184,A Fine Memorial,14,72,7,23,2,15
+185,Corrective Measure,14,17,6,23,2,15
+186,Commemoration,14,42,6,23,2,15
+187,Hammerhead,14,7,6,23,2,15
+188,Seventh Seraph Saw,16,60,7,9,2,15
+189,Fixed Odds,16,51,3,9,2,15
+190,Archon's Thunder,16,69,3,9,2,15
+191,The Swarm,16,64,7,9,2,15
+192,Bane of Sorrow,16,48,6,9,2,15
+193,Cold Denial,16,6,5,39,2,11
+194,Right Side of Wrong,17,20,3,23,2,11
+195,Adhortative,14,9,3,4,2,11
+196,Bygones,14,21,5,4,2,11
+197,The Third Axiom,14,64,7,4,2,11
+198,Hailing Confusion,14,3,5,4,2,11
+199,Jian 7 Rifle,14,18,7,4,2,11
+200,Last Perdition,14,68,6,4,2,11
+201,Chattering Bone,10,73,5,23,2,11
+202,Nightshade,10,64,5,23,2,11
+203,Infinite Paths 8,10,49,7,23,2,11
+204,Outlast,5,66,3,32,2,11
+205,Gridskipper,5,54,6,32,2,11
+206,Time Worn Spire,5,69,5,32,2,11
+207,Claws of the Wolf,5,69,6,32,2,11
+208,Horror's Least,5,64,7,32,2,11
+209,Bad Juju,10,16,5,23,1,11
+210,Outbreak Perfected,10,16,5,23,1,11
+211,No Time to Explain,16,16,5,39,1,11
+212,Graviton Lance,20,18,6,14,1,11
+213,Vigilance Wing,5,18,5,44,1,11
+214,Redrix's Claymore,16,68,5,39,2,11
+215,Eystein-D,16,52,5,39,2,11
+216,Premonition,16,72,6,39,2,11
+217,Redrix's Broadsword,16,68,5,39,2,11
+218,The Messenger,16,40,5,39,2,11
+219,Stars in Shadow,16,68,3,39,2,11
+220,Sacred Provenance,17,73,5,23,2,11
+221,Go Figure,17,18,5,23,2,11
+332,Hard Truths,17,68,5,46,2,6
+222,Blast Furnace,17,7,5,23,2,11
+223,Eyes of Tomorrow,8,73,3,40,1,1
+224,Two-Tailed Fox,8,18,4,13,1,1
+225,Wardcliff Coil,8,18,7,38,1,1
+226,Bellowing Giant,14,62,6,40,2,1
+227,Apex Predator,14,31,3,40,2,1
+228,Hoosegow,14,27,7,40,2,1
+229,Deathbringer,8,16,6,24,1,1
+230,Truth,8,16,6,24,1,1
+231,Mos Epoch III,17,18,7,36,2,1
+232,Shining Sphere,14,69,7,40,2,1
+233,Trustee,32,42,3,14,2,7
+234,Does Not Compute,16,68,5,25,2,7
+235,Imperative,16,9,5,25,2,7
+236,Wrong Side of Right,16,20,5,25,2,7
+237,The Guiding Sight,16,25,5,25,2,7
+238,Talons of the Eagle,16,69,5,25,2,7
+239,Transfiguration,16,75,5,25,2,7
+240,Calusea Noblesse,16,48,6,25,2,7
+241,The Cut and Run,16,18,7,25,2,7
+242,The Scholar,16,40,5,25,2,7
+243,Oxygen SR3,34,1,3,37,2,7
+244,Hung Jury,34,63,5,37,2,7
+245,Vision of Confluence,34,17,3,37,2,7
+246,No Feelings,34,62,7,37,2,7
+247,Royal Chase,34,34,6,37,2,7
+248,Distant Relation,34,21,3,37,2,7
+249,Nameless Midnight,34,71,5,37,2,7
+250,Patron of Lost Causes,10,57,5,6,2,7
+251,Pleiades Corrector,10,18,3,6,2,7
+252,Eternal Blazon,10,64,7,6,2,7
+253,Night Watch,10,66,5,6,2,7
+254,Vouchsafe,10,46,6,6,2,7
+255,Randy's Throwing Knife,32,29,5,14,2,7
+256,Black Scorpion-4sr,32,52,7,14,2,7
+257,Symmetry,32,34,7,14,1,7
+258,Polaris Lance,16,16,3,25,1,7
+259,Dead Man's Tale,35,16,5,22,1,7
+260,The Jade Rabbit,16,18,5,25,1,7
+261,MIDA Multi-Tool,10,18,5,6,1,7
+262,Skyburner's Oath,2,18,3,6,1,7
+263,One Small Step,5,72,5,26,2,5
+264,Hawthorne's Field-Forged Shotgun,10,18,5,26,2,5
+265,Parcel of Stardust,10,18,5,33,2,5
+266,Xenoclast IV,10,18,7,33,2,5
+267,Retrofuturist,10,68,6,33,2,5
+268,Risswalker,10,69,5,33,2,5
+269,Emperor's Courtesy,10,48,7,33,2,5
+270,Seventh Seraph CQC-12,10,34,3,33,2,5
+271,Dust Rock Blues,34,20,5,47,2,5
+272,Retold Tale,34,46,6,47,2,5
+273,Prophet of Doom,34,43,7,47,2,5
+274,Blasphemer,28,53,5,47,2,5
+275,Gunnora's Axe,28,69,7,47,2,5
+276,Bonechiller,28,3,6,47,2,5
+277,Sojourner's Tale,28,37,3,47,2,5
+278,Good Bone Structure,28,52,7,47,2,5
+279,"First In, Last Out",28,27,7,47,2,5
+280,Astral Horizon,17,40,5,2,2,5
+281,Mindbender's Ambition,17,61,3,2,2,5
+282,Last Man Standing,17,66,3,2,2,5
+283,Toil and Trouble,17,71,5,2,2,5
+284,Imperial Decree,17,51,5,2,2,5
+285,Python,17,76,6,2,2,5
+286,Found Verdict,17,17,7,2,2,5
+287,Felwinter's Lie,17,23,3,2,2,5
+288,Legend of Acrius,27,16,7,2,1,5
+289,Tractor Cannon,27,18,6,15,1,5
+290,The Fourth Horseman,8,16,7,9,1,5
+291,Duality,11,34,3,45,1,5
+292,Lord of Wolves,15,22,3,1,1,5
+293,The Chaperone,6,16,5,16,1,5
+294,IKELOS_SG_v1.0.1,5,59,3,26,2,5
+295,Wishbringer,5,68,3,26,2,5
+296,Badlander,5,18,7,26,2,5
+297,Threat Level,5,62,5,26,2,5
+298,The Deicide,5,18,6,26,2,5
+299,Rat King,14,16,5,43,1,8
+300,Devil's Ruin,14,16,3,43,1,8
+301,Cryosthesia 77k,34,37,2,14,1,8
+302,Traveler's Chosen,14,16,5,43,1,8
+303,Dead Man Walking,31,30,3,23,2,8
+304,The Fool's Remedy,31,69,3,23,2,8
+305,The Last Dance,25,71,7,30,2,8
+306,The Vision,25,18,7,30,2,8
+307,High Albedo,14,3,5,30,2,8
+308,Last Hope,25,18,7,30,2,8
+309,Anonymous Autumn,10,68,3,9,2,8
+310,Farewell,10,54,5,9,2,8
+311,Seventh Seraph SI-2,10,52,6,9,2,8
+312,Drang,14,52,3,43,2,8
+313,Drang (Baroque),14,51,3,43,2,8
+314,The Keening,14,68,7,43,2,8
+315,Translation Theory,14,46,3,43,2,8
+316,Buzzard,14,1,5,43,2,8
+317,Death by Scorn,26,20,6,18,2,8
+318,Smuggler's Word,26,18,5,18,2,8
+319,Brass Attacks,26,35,6,18,2,8
+320,Breachlight,26,57,5,18,2,8
+321,Vestian Dynasty,34,18,7,14,2,8
+322,Lonesome,34,66,5,14,2,8
+323,Enigma's Draw,34,18,5,14,2,8
+324,Shayura's Wrath,34,40,6,7,2,6
+325,Friction Fire,34,16,5,7,2,6
+326,Every Waking Moment,34,72,6,7,2,6
+327,Seventh Seraph VY-7,34,60,7,7,2,6
+328,Cold Front,17,70,5,46,2,6
+329,Borrowed Time,17,21,3,46,2,6
+330,Extraordinary Rendition,17,55,5,46,2,6
+331,IKELOS_SMG_v1.0.1,17,11,7,46,2,6
+333,Exit Strategy,14,12,5,27,2,6
+334,Bug-Out Bag,14,66,3,27,2,6
+335,Trackless Waste,14,20,5,27,2,6
+336,Subjunctive,10,9,7,27,2,6
+337,CALUS Mini-Tool,10,51,3,27,2,6
+338,The Recluse,10,28,6,27,2,6
+339,Stochastic Variable,10,18,7,27,2,6
+340,Pillager,10,21,5,27,2,6
+341,Multimach CCX,10,69,5,27,2,6
+342,Breath of the Dragon,10,69,7,27,2,6
+343,Escape Velocity,10,18,5,27,2,6
+344,Death Adder,10,33,3,27,2,6
+345,MIDA Mini-Tool,10,52,3,27,2,6
+346,Riskrunner,14,16,7,27,1,6
+347,Tarrabah,17,38,3,46,1,6
+348,Antiope-D,34,52,5,7,2,6
+349,Bad Reputation,34,18,3,7,2,6
+350,The Huckleberry,17,18,5,46,1,6
+351,The Supremacy,5,31,5,26,2,4
+352,IKELOS_SR_v1.1.0.1,5,11,3,26,2,4
+353,Distant Tumulus,5,18,3,26,2,4
+354,Bite of the Fox,17,69,5,29,2,4
+355,Tartara Gaze,17,4,7,29,2,4
+356,Revoker,17,26,5,29,2,4
+357,Frozen Orbit,17,68,6,29,2,4
+358,Occluded Finality,17,69,7,29,2,4
+359,Succession,17,42,5,29,2,4
+360,Dreaded Venture,17,21,5,29,2,4
+361,Trophy Hunter,17,34,6,29,2,4
+362,Eye of Sol,14,40,5,19,2,4
+363,Tranquility,14,72,5,19,2,4
+364,Adored,14,16,7,19,2,4
+365,Far Future,14,55,3,19,2,4
+366,Uzume RR4,14,67,3,19,2,4
+367,Beloved,14,51,3,19,2,4
+368,Long Shadow,14,71,5,19,2,4
+369,Sole Survivor,14,66,7,19,2,4
+370,Elegy-49,14,52,6,19,2,4
+371,The Long Goodbye,14,61,7,19,2,4
+372,Fate Cries Foul,14,68,6,19,2,4
+373,Apostate,5,53,7,26,2,4
+374,Omniscient Eye,5,43,3,26,2,4
+375,Praedyth's Revenge,5,17,5,26,2,4
+376,Twilight Oath,5,46,3,26,2,4
+377,Quickfang,10,18,6,12,2,16
+378,Goldtusk,10,51,3,12,2,16
+379,Temptation Hook,24,13,7,12,2,16
+380,Sola's Scar,24,40,3,12,2,16
+381,Falling Guillotine,29,13,6,12,2,16
+382,Night Terror,14,72,7,12,2,16
+383,Stryker's Sure-Hand,14,7,7,12,2,16
+384,Hagakure,14,18,7,12,2,16
+385,Abide the Return,14,18,3,12,2,16
+386,Zephyr,14,14,7,12,2,16
+387,Honor's Edge,14,18,7,12,2,16
+388,Traitor's Fate,14,41,7,12,2,16
+389,Bequest,14,42,7,12,2,16
+390,It Stared Back,14,56,3,12,2,16
+391,Just In Case,14,66,3,12,2,16
+392,Steel Sybil Z-14,14,68,6,12,2,16
+393,Negative Space,14,27,3,12,2,16
+394,Complex Solution,14,18,3,12,2,16
+395,Unspoken Promise,14,18,7,12,2,16
+396,Eternity's Edge,14,18,3,12,2,16
+397,Double-Edged Answer,14,64,6,12,2,16
+398,Future Safe 10,14,32,3,12,2,16
+399,Death's Razor,14,51,3,12,2,16
+400,Throne-Cleaver,17,51,6,12,2,16
+401,Crown-Splitter,17,18,6,12,2,16
+402,Black Talon,8,18,6,12,1,16
+403,The Lament,8,16,3,12,1,16
+404,Worldline Zero,8,16,7,12,1,16
+405,Divinity,21,73,7,27,1,14
+406,Wavesplitter,21,18,6,27,1,14
+407,Ruinous Effigy,21,16,6,27,1,14
+408,Coldheart,21,18,7,27,1,14
+409,Prometheus Lens,21,18,3,27,1,14

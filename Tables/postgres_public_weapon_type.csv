@@ -1,0 +1,17 @@
+weapon_type_id,weapon_type_name
+1,rocket_launcher
+2,grenade_launcher
+3,hand_cannon
+4,sniper
+5,shotgun
+6,smg
+7,scout_rifle
+8,sidearm
+9,auto_rifle
+10,bow
+11,pulse_rifle
+12,lfr
+13,fusion_rifle
+14,trace_rifle
+15,machine_gun
+16,sword

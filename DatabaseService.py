@@ -3,13 +3,6 @@ import psycopg2
 import os
 from enum import Enum
 
-class SortBy(Enum):
-    NAME = 0
-    ARTIST = 1
-    GENRE = 2
-    RELEASE_YEAR = 3
-
-
 # noinspection PyMethodMayBeStatic
 class DatabaseService(object):
 

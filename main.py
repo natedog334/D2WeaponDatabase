@@ -32,6 +32,7 @@ def search_weapon_menu():
             Option("Name", search_weapon_by_name),
             Option("Weapon Type", lambda: push(search_weapon_type_menu(), True)),
             Option("Element", lambda: push(search_weapon_element_menu(), True)),
+            Option("Advanced Search", advanced_search),
             Option("Go back", lambda: pop_and_clear())
         ]
     )
@@ -115,6 +116,26 @@ def search_weapon_by_type(type):
 
 def search_weapon_by_element(element):
     return_value = dbs.get_weapon_by_element(element)
+    if return_value:
+        clear()
+        for weapon_info in return_value:
+            print_weapon(weapon_info)
+    else:
+        clear()
+        print("An error occurred/no weapons found.")
+
+def advanced_search():
+    search_values = ["", "", "", ""]
+    search_values[0] = input("Enter a weapon type (leave blank to ignore this criteria)\n> ")
+    search_values[1] = input("Enter a weapon element (leave blank to ignore this criteria)\n> ")
+    search_values[2] = input("Enter a rarity (leave blank to ignore this criteria)\n> ")
+    search_values[3] = input("Enter a source (leave blank to ignore this criteria)\n> ")
+
+    for idx in range(len(search_values)):
+        if search_values[idx] is "":
+            search_values[idx] = "%"
+
+    return_value = dbs.get_weapon_from_advanced_search(search_values)
     if return_value:
         clear()
         for weapon_info in return_value:

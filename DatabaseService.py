@@ -57,6 +57,23 @@ class DatabaseService(object):
                 """)
         return exec_fetchall(receipt)
 
+    def get_weapon_from_advanced_search(self, values):
+        receipt = (f"""
+                            select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
+                            from guns
+                            inner join archetype a on a.archetype_id = guns.archetype_id
+                            inner join element e on e.element_id = guns.element_id
+                            inner join rarity r on r.rarity_id = guns.rarity_id
+                            inner join rof on rof.rof_id = guns.rof_id
+                            inner join source s on s.source_id = guns.source_id
+                            inner join weapon_type wt on wt.weapon_type_id = guns.weapon_type_id
+                            where wt.weapon_type_name like '{values[0]}'
+                            and e.gun_element like '{values[1]}'
+                            and r.gun_rarity like '{values[2]}'
+                            and s.gun_source like '{values[3]}'
+                        """)
+        return exec_fetchall(receipt)
+
     def get_all_primaries(self):
         receipt = (f"""
                     select guns.gun_name, wt.weapon_type_name, a.gun_archetype, rof.gun_rof, e.gun_element, r.gun_rarity, s.gun_source
